@@ -1,0 +1,89 @@
+#mainBanner {
+    height: 80px;
+    padding: 5px;
+    position: relative;
+    border-bottom: solid 3px #c24747;
+}
+
+#mainBannerOpts {
+    width:300px;
+    float: right;
+    text-wrap:none;
+}
+
+.bgGreen {
+    background-color: #035195;
+}
+
+.newProduct {
+    color: black;
+}
+
+.w100 {
+    width:100%
+}
+
+.wtText {
+    color:white
+}
+
+.lrgText {
+    font-size:26px;
+}
+
+.centered {
+    text-align: center
+}
+
+.bannerButtonRoundLite {
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    padding: 7px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+    .bannerButtonRoundLite:hover {
+        background-color:silver;
+    }
+
+.bannerButtonRoundDark {
+    background-color: #035195;
+    border-radius: 12px;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+    .bannerButtonRoundDark:hover {
+        background-color: #466682;
+    }
+
+
+.bannerButton {
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 0px white;
+}
+    .bannerButton:hover {
+        /*color: rgb(30, 57, 50);*/
+        color:green;
+    }
+
+.carouselImg {
+    height: 37rem;
+}
+

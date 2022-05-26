@@ -6,14 +6,19 @@ namespace CMS1.Models
 {
     public partial class ApplicationDbContext : DbContext
     {
-       
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext()
+        {
+        }
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
         {
         }
 
         public virtual DbSet<NeoFileAssociations> NeoFileAssociations { get; set; }
         public virtual DbSet<NeoFiles> NeoFiles { get; set; }
         public virtual DbSet<NeoFolders> NeoFolders { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -115,7 +120,9 @@ namespace CMS1.Models
                     .HasColumnName("DTModified")
                     .HasColumnType("datetime");
 
-                entity.Property(e => e.FolderId).HasColumnName("FolderID");
+                entity.Property(e => e.FolderId)
+                    .HasColumnName("FolderID")
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.FolderTreeId)
                     .IsRequired()
